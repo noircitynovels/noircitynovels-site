@@ -1,0 +1,22 @@
+:root{--bg:#0B0C10;--panel:#11131A;--cyan:#00E5FF;--crimson:#DC143C;--muted:#A9A9A9}
+*{box-sizing:border-box}body{background:var(--bg);color:#fff;font-family:Inter,system-ui,sans-serif;margin:0;line-height:1.6}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}header{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(0,229,255,.25);position:sticky;top:0;background:rgba(11,12,16,.92);z-index:20}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cyan);font-weight:900;letter-spacing:.14em;font-size:18px;text-decoration:none}.brand img{width:36px;height:36px;border-radius:6px;border:1px solid var(--cyan)}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:13px;font-weight:700;text-transform:uppercase}nav a:hover{color:var(--cyan)}
+.hero{position:relative;margin-top:22px;border-radius:14px;overflow:hidden;border:1px solid rgba(0,229,255,.35);box-shadow:0 24px 60px rgba(0,0,0,.85)}
+.hero-bg{width:100%;height:430px;object-fit:cover;display:block;filter:brightness(.72)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,12,16,.96) 0%,rgba(11,12,16,.76) 52%,rgba(11,12,16,.25) 100%);display:flex;flex-direction:column;justify-content:center;padding:42px}
+.kicker{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.18em;margin-bottom:10px}h1{font-size:40px;line-height:1.12;margin:0 0 14px;max-width:620px}.hero p{color:#cbd5e1;max-width:540px;margin:0 0 22px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:12px 20px;border-radius:6px;font-weight:800;text-decoration:none;font-size:13px;text-transform:uppercase;display:inline-block}
+.btn-cyan{background:var(--cyan);color:#0B0C10;box-shadow:0 0 18px rgba(0,229,255,.45)}.btn-crimson{background:var(--crimson);color:#fff;box-shadow:0 0 18px rgba(220,20,60,.45)}
+.section{margin-top:44px}.sec-head{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #1e2433;padding-bottom:10px;margin-bottom:20px}.sec-head h2{color:var(--cyan);margin:0;font-size:19px;letter-spacing:.1em;text-transform:uppercase}
+.showcase{display:grid;grid-template-columns:1fr 1fr;gap:22px}.game-card,.char-card,.map-frame,.loc-list{background:var(--panel);border:1px solid #1e2433;border-radius:12px;overflow:hidden}
+.game-card img{width:100%;height:260px;object-fit:cover}.game-body{padding:20px}.pill{display:inline-block;font-size:11px;font-weight:800;padding:3px 9px;border-radius:4px;margin-bottom:8px;text-transform:uppercase}
+.pill-live{background:rgba(0,229,255,.15);color:var(--cyan)}.pill-prequel{background:rgba(220,20,60,.18);color:#ff6b81}
+.roster{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.char-card img{width:100%;height:300px;object-fit:cover;object-position:top center}.char-info{padding:16px}.char-role{color:var(--cyan);font-size:11px;font-weight:700;text-transform:uppercase;margin-bottom:6px}
+.map-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:start}.map-frame{padding:12px}.map-frame img{width:100%;border-radius:8px;display:block}.loc-list{padding:16px}
+.loc-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #1a202c}.loc-row:last-child{border-bottom:none}
+.tag{font-size:10px;font-weight:800;padding:2px 7px;border-radius:3px;background:#1e293b;color:#94a3b8;margin-left:6px}.tag-live{background:rgba(0,229,255,.16);color:var(--cyan)}
+.slot-pill{font-size:11px;color:var(--cyan);white-space:nowrap;background:#0B0C10;padding:4px 8px;border-radius:4px}.log-card{background:#12151f;border:1px solid rgba(0,229,255,.25);border-left:4px solid var(--crimson);border-radius:8px;padding:18px;margin-bottom:14px}
+.log-badge{color:var(--crimson);font-size:11px;font-weight:800;margin-bottom:6px}pre{white-space:pre-wrap;font-family:inherit;color:#cbd5e1;margin:0;font-size:14px}.muted{color:var(--muted);font-size:13px}
+footer{margin-top:50px;padding:24px 0;border-top:1px solid #1e2433;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:860px){.showcase,.map-grid,.roster{grid-template-columns:1fr}.hero-overlay{padding:24px}h1{font-size:28px}}
