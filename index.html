@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Noir City Novels | Neon-Noir Interactive Fiction</title>
+<style>
+body{background:#0B0C10;color:#fff;font-family:Inter,system-ui,sans-serif;margin:0;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 20px}
+header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #00E5FF44;padding-bottom:16px}
+.brand{color:#00E5FF;font-weight:800;letter-spacing:.12em;font-size:20px}
+nav a{color:#A9A9A9;text-decoration:none;margin-left:18px;font-size:14px}
+nav a:hover{color:#00E5FF}
+.hero{padding:44px 0 32px;border-bottom:1px solid #1f2430}
+h1{font-size:38px;margin:0 0 12px;letter-spacing:.04em}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.btn{padding:13px 22px;border-radius:5px;font-weight:700;text-decoration:none;font-size:15px;display:inline-block}
+.btn-primary{background:#00E5FF;color:#0B0C10}
+.btn-crimson{background:#DC143C;color:#fff}
+.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-top:28px}
+.card{background:#111319;border:1px solid #00E5FF33;border-radius:8px;padding:18px;margin-bottom:16px}
+h2,h3{color:#00E5FF;margin-top:0;letter-spacing:.05em}
+pre{white-space:pre-wrap;font-family:inherit;color:#e2e8f0;margin:0}
+.loc{padding:10px 0;border-bottom:1px solid #1f2430}
+.tag{background:#00E5FF22;color:#00E5FF;font-size:11px;padding:2px 6px;border-radius:3px;margin-left:6px}
+.muted{color:#A9A9A9;font-size:13px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid #1f2430;color:#A9A9A9;font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<header><div class="brand">NOIR CITY NOVELS</div><nav><a href="#logs">Detective's Logs</a><a href="#neighborhood">Neighborhood Map</a><a href="/precinct/">Precinct</a></nav></header>
+<section class="hero">
+  <div style="color:#00E5FF;font-size:13px;letter-spacing:.1em">ACTIVE INVESTIGATION // THE PAPER NOOSE &amp; PREQUEL</div>
+  <h1>Every street has a story. Every neon light hides a sin.</h1>
+  <p style="color:#A9A9A9;max-width:680px">Step out of the rain and into the Precinct Archives. Play the free <b>The Paper Noose</b> case demo on itch.io, or unlock full Clearance Level Authorization for complete builds and monthly suburban neighborhood expansions.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="https://itch.io" target="_blank" onclick="track('click_itch_demo')">▶ Play Free Demo (itch.io)</a>
+    <a class="btn btn-crimson" href="https://patreon.com" target="_blank" onclick="track('click_patreon_clearance')">🔑 Unlock Full Access ($5 Clearance)</a>
+  </div>
+</section>
+<div class="grid">
+  <div id="logs"><h2>🕵️ Detective's Field Logs</h2><article class='card'><h3>DETECTIVE'S LOG // PRECINCT ARCHIVE</h3><p>Suburban neighborhood surveillance files indexed. Free Case File demo live on itch.io; full Clearance Level access open in the Precinct.</p></article></div>
+  <div id="neighborhood"><h2>🏘️ Suburban Neighborhood Map</h2><div class="card"><div class='loc'><b>Sarah's Bedroom</b> <span class='tag'>LAUNCH</span><div class='muted'>The Sanctuary. Check Phone HUD, change outfits, or sleep to advance day.</div></div><div class='loc'><b>Kitchen / Living Room</b> <span class='tag'>LAUNCH</span><div class='muted'>High-tension interior space under watchful authority.</div></div><div class='loc'><b>His Study / Office</b> <span class='tag'>LAUNCH</span><div class='muted'>The Danger Zone. High-risk night infiltration for stashed cash or syndicate clues.</div></div><div class='loc'><b>The Fence Line</b> <span class='tag'>LAUNCH</span><div class='muted'>Backyard boundary bordering the neighbor's luxury estate.</div></div><div class='loc'><b>The Tree Line</b> <span class='tag'>LAUNCH</span><div class='muted'>Dark unlit edge bordering the neighborhood walking trail.</div></div><div class='loc'><b>Poolside Terrace</b> <span class='tag'>MONTH 1</span><div class='muted'>Month 1 Suburban Expansion: Private patio & VIP nightlife staging.</div></div><div class='loc'><b>Late-Night Booth</b> <span class='tag'>MONTH 2</span><div class='muted'>Month 2 Suburban Expansion: Shift work cash grind & off-grid trail intel.</div></div><div class='loc'><b>Gated Conservatory</b> <span class='tag'>MONTH 3</span><div class='muted'>Month 3 Suburban Expansion: Modular slot ready for new neighbor route.</div></div></div></div>
+</div>
+<footer><span>© 2026 Noir City Novels • admin@noircitynovel.com</span><span><a href="https://instagram.com" target="_blank" style="color:#00E5FF">Instagram</a></span></footer>
+</div>
+<script>
+function track(ev){
+  if(typeof gtag==='function') gtag('event',ev);
+  try{navigator.sendBeacon('https://translator-scoring-retirement-parade.trycloudflare.com/api/ncn/telemetry',new Blob([JSON.stringify({game:'website',event:ev,meta:{}})],{type:'application/json'}));}catch(e){}
+}
+</script></body></html>
